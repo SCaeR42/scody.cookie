@@ -1,0 +1,2 @@
+<?php
+$MESS['SCODY_COOKIE_CONFIRM'] = 'OK';
