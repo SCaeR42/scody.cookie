@@ -22,6 +22,7 @@ class scody_cookie extends CModule
     protected $minVersion = '23.00.00';//D7
     public $errors;
 
+
     public function __construct()
     {
         $arModuleVersion = [];
@@ -42,9 +43,12 @@ class scody_cookie extends CModule
     /**
      * @throws ArgumentOutOfRangeException
      */
-    public function DoInstall()
+    public function DoInstall(): bool
     {
         global $APPLICATION, $step;
+
+        //todo: Проверка PULL сервера
+
 
         if (!$this->CheckBXVersion())
         {
